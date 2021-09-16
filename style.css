@@ -3,5 +3,18 @@ body {
 }
 
 .heading {
+  display: flex;
   color: green;
+  list-style-type: none;
+  justify-content: right;
+  background-color: greenyellow;
+  margin-left: 20px;
+  margin-top: 0;
+  width: auto;
+  font-size: 30px;
+}
+
+li {
+  margin-left: 1200px;
+  font-size: 30px;
 }
