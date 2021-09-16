@@ -1,6 +1,7 @@
 body {
-    display: flex;
+  display: flex;
 }
+
 .heading {
-    color: green;
+  color: green;
 }
