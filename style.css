@@ -1,20 +1,37 @@
 body {
-  display: flex;
+  height: 718px;
+  width: 375px;
 }
 
 .heading {
   display: flex;
-  color: green;
-  list-style-type: none;
-  justify-content: right;
+  height: 20px;
+  width: 76px;
+  left: 12px;
+  top: 10px;
   background-color: greenyellow;
-  margin-left: 20px;
-  margin-top: 0;
-  width: auto;
-  font-size: 30px;
+  justify-content: space-between;
 }
 
-li {
-  margin-left: 1200px;
-  font-size: 30px;
+article {
+  position: static;
+  width: 327px;
+  height: 150px;
+  left: 24px;
+  top: 114px;
+  margin-top: 40px;
+}
+
+span {
+  display: block;
+  color: #344563;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7480ee;
 }
