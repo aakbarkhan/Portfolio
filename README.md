@@ -4,7 +4,7 @@
 
 > This project is Portfolio mobile version.
 
-![screenshot](./assets/mobile-portfolio.png)
+![screenshot](./mobile-portfolio.png)
 
 The toolbar contains logo and menu. The headline section is an introduction about the person.
 
