@@ -139,17 +139,113 @@ h3 {
   font-style: normal;
 }
 
-.work-1 {
+.works {
   margin-top: 30px;
   text-align: center;
+  padding: 10px;
   height: 236px;
 }
 
-.post-1 {
-  height: 105px;
+.post-heading {
+  height: 76px;
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
-  margin-top: 20px;
+  margin-top: 40px;
+}
+
+.post-1 {
+  height: 204px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  color: #dcdce8;
+  text-align: center;
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.language {
+  display: flex;
+  margin-left: 20px;
+}
+
+h5 {
+  color: #edecff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.line {
+  margin-left: 20px;
+  height: 40px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.btn {
+  height: 50px;
+  background-color: #7d73fc;
+  margin-right: 225px;
+  align-items: center;
+  color: #edecff;
+  width: 89px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  color: #9390ff;
+  height: 35px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 44px;
+  font-size: 32px;
+}
+
+.contact-info {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  height: 105px;
+  line-height: 24px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input {
+  width: 327px;
+  height: 48px;
+  margin-bottom: 30px;
+}
+
+textarea {
+  color: #81818c;
+}
+
+.btn-btn {
+  height: 50px;
+  background-color: #7d73fc;
+  margin-top: 40px;
+  color: #edecff;
+  width: 89px;
+  margin-bottom: 40px;
+}
+
+.email {
+  font-size: 20px;
+  color: white;
+  line-height: 28px;
+  margin-bottom: 60px;
+  margin-left: 40px;
+}
+
+.end-line {
+  background-color: black;
+  height: 5px;
+  width: 50%;
+  border-radius: 8px;
+  padding-bottom: 5px;
 }
