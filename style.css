@@ -1,5 +1,6 @@
 body {
   height: auto;
+  width: 375px;
   background-color: #210b54;
 }
 
@@ -13,6 +14,11 @@ body {
 .logo {
   color: white;
   text-decoration: none;
+  cursor: pointer;
+}
+
+.logo:hover {
+  text-decoration: underline;
 }
 
 h1 {
