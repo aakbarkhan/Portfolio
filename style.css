@@ -180,7 +180,7 @@ h3 {
 }
 
 .languages {
-  display: flex;
+  /* display: flex; */
 }
 
 .languages > li:not(:last-child) {
