@@ -244,7 +244,7 @@ h4 {
 }
 
 input {
-  width: 327px;
+  width: 296px;
   height: 48px;
   margin-bottom: 30px;
 }
@@ -283,4 +283,8 @@ textarea {
   width: 50%;
   border-radius: 8px;
   padding-bottom: 5px;
+}
+
+.input-form{
+  padding: 5px;
 }
