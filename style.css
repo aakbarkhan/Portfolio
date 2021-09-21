@@ -181,6 +181,12 @@ h3 {
 
 .languages {
   /* display: flex; */
+  display: block;
+}
+
+.lang{
+  float: left;
+  margin-bottom: 10px;
 }
 
 .languages > li:not(:last-child) {
