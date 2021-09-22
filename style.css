@@ -244,13 +244,15 @@ h4 {
 }
 
 input {
-  width: 296px;
+  width: 322px;
   height: 48px;
   margin-bottom: 30px;
+  margin-left: 10px;
 }
 
 textarea {
   color: #81818c;
+  margin-left: 6px;
 }
 
 .btn-btn {
@@ -285,6 +287,6 @@ textarea {
   padding-bottom: 5px;
 }
 
-.input-form{
-  padding: 5px;
+.input-form {
+  padding: 3px;
 }
