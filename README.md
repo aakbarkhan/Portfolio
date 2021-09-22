@@ -8,6 +8,13 @@
 
 The toolbar contains logo and menu. The headline section is an introduction about the person.
 
+![](./galaxys5.png)
+
+The above section is the contact form and the footer in the portfolio.
+This mobile version is tested on galaxy S5.
+
+
+
 ## Built With
 
 - Html&Css
