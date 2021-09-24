@@ -13,10 +13,30 @@
     <div class="main">
         <header class="heading">
             <a class="logo" href="#"> John Doe </a>
-            <nav>
+            <nav class="mobile">
                 <a href="#">
                     <img class="menu" src="./assets/menu_white_24dp.svg" alt="menu_bar" />
                 </a>
+            </nav>
+        </header>
+        <header class="desktop">
+            <a class="logo" href="#"> John Doe </a>
+            <nav>
+                <ul class="navbar">
+                    <li class="nav-tag">
+                        <a class="nav-tag" href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="nav-tag" href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="nav-tag" href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <img class="nav-tag" src="./mail.png" alt="">
+                    </li>
+                </ul>
+                
             </nav>
         </header>
         <section class="job-title">
@@ -24,32 +44,60 @@
                 <h1>Aku</h1>
                 <h2 class="title">Software Developer</h2>
                 <img class="ellipse" src="./assets/Ellipse18.png" alt="" />
-                <p class="discription">
-                    I can help you build a product, feature or website Look through some
-                    of my work and experience! If you like what you see and have a
-                    project you need coded, don't hasitate to contact me.
-                </p>
+                <div class="discribe">
+                    <p class="discription">
+                        I can help you build a product, feature or website Look through some
+                        of my work and experience! If you like what you see and have a
+                        project you need coded, don't hasitate to contact me.
+                    </p>
+
+                </div>
             </div>
-            <hr />
+            <hr class="desktop-line" />
         </section>
 
-        <div class="language-framework">
-            <div>
-                <h6>Language</h6>
-                <ul>
-                    <li>Javascript</li>
-                    <li>Ruby</li>
-                    <li>Html</li>
-                    <li>Css</li>
-                </ul>
+        <div class="language-framework-desktop">
+            <div class="mobile-lang">
+                <div>
+                    <h6>Language</h6>
+                    <ul>
+                        <li>Javascript</li>
+                        <li>Ruby</li>
+                        <li>Html</li>
+                        <li>Css</li>
+                    </ul>
+                </div>
+                <div class="mobile">
+                    <h6>Frameworks</h6>
+                    <ul>
+                        <li>Bootstrap</li>
+                        <li>Ruby on Rails</li>
+                        <li>RSPec</li>
+                        <li>Selenium</li>
+                    </ul>
+
+                </div>
             </div>
-            <div>
-                <h6>Frameworks</h6>
+            <div class="hide-mobile">
+                <div>
+                    <h6>Frameworks</h6>
+                    <ul>
+                        <li>Bootstrap</li>
+                        <li>Ruby on Rails</li>
+                        <li>RSPec</li>
+                        <li>Selenium</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="skills-desktop">
+                <h6>Skills</h6>
                 <ul>
-                    <li>Bootstrap</li>
-                    <li>Ruby on Rails</li>
-                    <li>RSPec</li>
-                    <li>Selenium</li>
+                    <li>Codekit</li>
+                    <li>Github</li>
+                    <li>Codepen</li>
+                    <li>Gitlab</li>
+                    <li>Terminal</li>
                 </ul>
             </div>
             <img class="side-ellipse" src="./assets/Ellipse19.png" alt="" />
@@ -64,8 +112,39 @@
                 <li>Terminal</li>
             </ul>
         </div>
-        <hr />
-        <ul class="social-icons">
+        <hr class="desktop-line"/>
+        <div class="desktop-social-icon">
+            <img src="./assets/ElementRight.png" alt="" />
+            <ul class="social-icons">
+                <li class="icons">
+                    <a href="#">
+                        <img src="./assets/git.png" alt="" />
+                    </a>
+                </li>
+                <li class="icons">
+                    <a href="#">
+                        <img src="./assets/ln.png" alt="" />
+                    </a>
+                </li>
+                <li class="icons">
+                    <a href="#">
+                        <img src="./assets/v.png" alt="" />
+                    </a>
+                </li>
+                <li class="icons">
+                    <a href="#">
+                        <img src="./assets/tw.png" alt="" />
+                    </a>
+                </li>
+                <li class="icons">
+                    <a href="">
+                        <img src="./assets/m.png" alt="" />
+                    </a>
+                </li>
+            </ul>
+            <img src="./assets/ElementRight.png" alt="" />
+        </div>
+        <ul class="social-icons-icons">
             <li class="icons">
                 <a href="#">
                     <img src="./assets/git.png" alt="" />
@@ -92,76 +171,96 @@
                 </a>
             </li>
         </ul>
+        <div class="works-desk">
+            <h3 class="work-desk">My recent work</h3>
+        </div>
+        <hr class="outside" />
         <section class="works">
             <div class="work">
                 <img class="arrow-icons" src="./assets/ElementRight.png" alt="" />
                 <h2 class="left">MY RECENT WORK</h2>
             </div>
-            <hr class="recent" />
-            <div>
-                <img src="./ImgPlaceholder.png" alt="" />
-                <h2 class="post-heading">Multi-Post Stories</h2>
-                <p class="post-1">
-                    A daily selection of privately personalized reads; no accounts or
-                    sign-ups required. has been the industry's standard dummy text ever
-                    since the 1500s, when an unknown printer took a standard dummy text.
-                </p>
-                <ul class="languages">
-                    <li>css</li>
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>ruby</li>
-                </ul>
-                <button class="btn" type="button">See Project</button>
+            <!-- <hr class="recent" /> -->
+            <div class="card">
+                <div class="card-one">
+                    <img class="card-image" src="./ImgPlaceholder.png" alt="" />
+                    <div class="stoies">
+                        <h2 class="post-heading">Multi-Post Stories</h2>
+                        <p class="post-1">
+                            A daily selection of privately personalized reads; no accounts or
+                            sign-ups required. has been the industry's standard dummy text ever
+                            since the 1500s, when an unknown printer took a standard dummy text.
+                        </p>
+                        <ul class="languages">
+                            <li>css</li>
+                            <li>html</li>
+                            <li>bootstrap</li>
+                            <li>ruby</li>
+                        </ul>
+                        <button class="btn" type="button">See Project</button>
+                    </div>
+                </div>
+                <div class="card-two">
+                    <img class="card-image" src="./ImgPlaceholder.png" alt="" />
+                    <div class="stoies" id="end">
+                        <h2 class="post-heading">Multi-Post Stories</h2>
+                        <p class="post-1">
+                            A daily selection of privately personalized reads; no accounts or
+                            sign-ups required. has been the industry's standard dummy text ever
+                            since the 1500s, when an unknown printer took a standard dummy text.
+                        </p>
+                        <ul class="languages">
+                            <li>css</li>
+                            <li>html</li>
+                            <li>bootstrap</li>
+                            <li>ruby</li>
+                        </ul>
+                        <button class="btn" type="button">See Project</button>
+
+                    </div>
+
+                </div>
+                <div class="card-one">
+                    <img class="card-image" src="./ImgPlaceholder.png" alt="" />
+                    <div class="stoies">
+                        <h2 class="post-heading">Multi-Post Stories</h2>
+                        <p class="post-1">
+                            A daily selection of privately personalized reads; no accounts or
+                            sign-ups required. has been the industry's standard dummy text ever
+                            since the 1500s, when an unknown printer took a standard dummy text.
+                        </p>
+                        <ul class="languages">
+                            <li>css</li>
+                            <li>html</li>
+                            <li>bootstrap</li>
+                            <li>ruby</li>
+                        </ul>
+                        <button class="btn" type="button">See Project</button>
+                    </div>
+                </div>
+                <div class="card-two">
+                    <img class="card-image" src="./ImgPlaceholder.png" alt="" />
+                    <div class="stoies" id="end">
+                        <h2 class="post-heading">Multi-Post Stories</h2>
+                        <p class="post-1">
+                            A daily selection of privately personalized reads; no accounts or
+                            sign-ups required. has been the industry's standard dummy text ever
+                            since the 1500s, when an unknown printer took a standard dummy text.
+                        </p>
+                        <ul class="languages">
+                            <li>css</li>
+                            <li>html</li>
+                            <li>bootstrap</li>
+                            <li>ruby</li>
+                        </ul>
+                        <button class="btn" type="button">See Project</button>
+
+                    </div>
+
+                </div>
+                
             </div>
-            <div>
-                <img src="./ImgPlaceholder.png" alt="" />
-                <h2 class="post-heading">Multi-Post Stories</h2>
-                <p class="post-1">
-                    A daily selection of privately personalized reads; no accounts or
-                    sign-ups required. has been the industry's standard dummy text ever
-                    since the 1500s, when an unknown printer took a standard dummy text.
-                </p>
-                <ul class="languages">
-                    <li>css</li>
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>ruby</li>
-                </ul>
-                <button class="btn" type="button">See Project</button>
-            </div>
-            <div>
-                <img src="./ImgPlaceholder.png" alt="" />
-                <h2 class="post-heading">Multi-Post Stories</h2>
-                <p class="post-1">
-                    A daily selection of privately personalized reads; no accounts or
-                    sign-ups required. has been the industry's standard dummy text ever
-                    since the 1500s, when an unknown printer took a standard dummy text.
-                </p>
-                <ul class="languages">
-                    <li>css</li>
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>ruby</li>
-                </ul>
-                <button class="btn" type="button">See Project</button>
-            </div>
-            <div>
-                <img src="./ImgPlaceholder.png" alt="" />
-                <h2 class="post-heading">Multi-Post Stories</h2>
-                <p class="post-1">
-                    A daily selection of privately personalized reads; no accounts or
-                    sign-ups required. has been the industry's standard dummy text ever
-                    since the 1500s, when an unknown printer took a standard dummy text.
-                </p>
-                <ul class="languages">
-                    <li>css</li>
-                    <li>html</li>
-                    <li>bootstrap</li>
-                    <li>ruby</li>
-                </ul>
-                <button class="btn" type="button">See Project</button>
-            </div>
+           
             <section>
                 <h4>CONTACT US</h4>
                 <p class="contact-info">

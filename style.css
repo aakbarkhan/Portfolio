@@ -2,12 +2,7 @@ body {
   height: auto;
   width: 375px;
   background-color: #210b54;
-  margin: 0;
-}
-
-.main {
-  display: grid;
-  grid-template-columns: 100%;
+  font-family: Roboto, sans-serif;
 }
 
 .heading {
@@ -15,6 +10,129 @@ body {
   width: 375px;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    width: auto;
+    margin: 0 auto;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  h6 {
+    color: white;
+  }
+
+  .main {
+    width: 100%;
+    display: grid;
+  }
+
+  .heading {
+    display: none;
+  }
+
+  .desktop {
+    display: flex;
+    width: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar {
+    display: flex;
+  }
+
+  .nav-tag {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .job-title {
+    display: grid;
+    grid-template-columns: 100%;
+    height: auto;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .discription {
+    width: 99%;
+    margin: 0 auto;
+  }
+
+  .discribe {
+    width: 447px;
+    margin: 0 auto;
+  }
+
+  .ellipse,  .side-ellipse, .skills {
+    display: none;
+  }
+
+  .language-framework-desktop {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .desktop-line {
+    width: 448px;
+    border: 1px solid #646369;
+  }
+
+  .social-icons {
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
+
+  .desktop-social-icon {
+    display: flex;
+    width: 73%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social-icons-icons, .arrow-icons {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .desktop, .skills-desktop, .desktop-social-icon {
+    display: none;
+  }
+
+  .mobile-lang {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+
+  .language-framework {
+    color: #9490ff;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .social-icons-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
 }
 
 .logo {
@@ -41,6 +159,19 @@ h2 {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .left {
+    display: none;
+  }
+
+  .works-desk {
+    display: block;
+    width: 70%;
+    font-size: 36px;
+    color: #9390ff;
+  }
+}
+
 .job-title {
   display: grid;
   grid-template-columns: 100%;
@@ -65,11 +196,9 @@ h2 {
 }
 
 .discription {
-  display: grid;
-  grid-template-columns: 100%;
   color: white;
   text-align: center;
-  padding: 34px;
+  /* padding: 34px; */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 20px;
   line-height: 28px;
@@ -92,6 +221,23 @@ h2 {
   display: flex;
   justify-content: center;
   margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .outside {
+    width: 96%;
+    margin-top: 82px;
+  }
+
+  .card-one {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-bottom: 50px;
+  }
+
+  .card-image {
+    width: 96%;
+  }
 }
 
 .icons {
@@ -122,6 +268,7 @@ hr {
 
 .recent {
   margin-bottom: 49px;
+  width: auto;
 }
 
 h3 {
@@ -156,6 +303,28 @@ h3 {
   text-align: center;
   padding: 10px;
   height: 236px;
+}
+
+@media screen and (min-width: 768px) {
+  .work-desk {
+    color: #9390ff;
+    width: auto;
+    padding: 0;
+    margin-left: 20px;
+    margin-bottom: -48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .work-desk, .outside {
+    display: none;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+  }
 }
 
 .post-heading {
@@ -213,6 +382,26 @@ h5 {
   color: #edecff;
   width: 89px;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .stoies {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+  }
+
+  .card-two {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    direction: rtl;
+    margin-bottom: 50px;
+  }
+
+  #end {
+    align-items: flex-end;
+  }
 }
 
 .btn:hover {
