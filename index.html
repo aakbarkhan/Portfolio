@@ -27,10 +27,10 @@
                         <a class="nav-tag" href="#">Portfolio</a>
                     </li>
                     <li>
-                        <a class="nav-tag" href="#">Portfolio</a>
+                        <a class="nav-tag" href="#">About</a>
                     </li>
                     <li>
-                        <a class="nav-tag" href="#">Portfolio</a>
+                        <a class="nav-tag" href="#">Contact</a>
                     </li>
                     <li>
                         <img class="nav-tag" src="./mail.png" alt="">
@@ -180,7 +180,7 @@
                 <img class="arrow-icons" src="./assets/ElementRight.png" alt="" />
                 <h2 class="left">MY RECENT WORK</h2>
             </div>
-            <!-- <hr class="recent" /> -->
+            <hr class="recent" />
             <div class="card">
                 <div class="card-one">
                     <img class="card-image" src="./ImgPlaceholder.png" alt="" />
@@ -210,10 +210,10 @@
                             since the 1500s, when an unknown printer took a standard dummy text.
                         </p>
                         <ul class="languages">
-                            <li>css</li>
-                            <li>html</li>
-                            <li>bootstrap</li>
                             <li>ruby</li>
+                            <li>bootstrap</li>
+                            <li>html</li>
+                            <li>css</li>
                         </ul>
                         <button class="btn" type="button">See Project</button>
 
@@ -240,7 +240,7 @@
                 </div>
                 <div class="card-two">
                     <img class="card-image" src="./ImgPlaceholder.png" alt="" />
-                    <div class="stoies" id="end">
+                    <div class="stoies" id="den">
                         <h2 class="post-heading">Multi-Post Stories</h2>
                         <p class="post-1">
                             A daily selection of privately personalized reads; no accounts or
@@ -261,30 +261,94 @@
                 
             </div>
            
-            <section>
+            <section class="chat">
+                <h4>Let's chat!</h4>
+                <p class="contact-info">
+                    If you have an application you are interested in developing, a
+                    feature that you need built or a project that needs coding. I’d love
+                    to help with it
+                </p>
+                <div class="form-info">
+
+                    <form action="https://formspree.io/f/mdoybpze" method="POST">
+                        <ul class="input-form">
+                            <li>
+                                <input name="name" required type="text" placeholder="Type your name" maxlength="30" />
+                            </li>
+                            <li>
+                                <input type="email" placeholder="Type your email" required name="email" />
+                            </li>
+                            <li>
+                                <textarea name="text" maxlength="500" id="in" cols="68" rows="10" required
+                                    placeholder="Enter text here"></textarea>
+                            </li>
+                            <li>
+                                <button class="btn-btn" type="submit">Submit</button>
+                            </li>
+                        </ul>
+                    </form>
+                    <hr class="endline">
+                    <footer>
+                        <ul class="social-icons">
+                            <li class="icons">
+                                <a href="#">
+                                    <img src="./assets/git.png" alt="" />
+                                </a>
+                            </li>
+                            <li class="icons">
+                                <a href="#">
+                                    <img src="./assets/ln.png" alt="" />
+                                </a>
+                            </li>
+                            <li class="icons">
+                                <a href="#">
+                                    <img src="./assets/v.png" alt="" />
+                                </a>
+                            </li>
+                            <li class="icons">
+                                <a href="#">
+                                    <img src="./assets/tw.png" alt="" />
+                                </a>
+                            </li>
+                            <li class="icons">
+                                <a href="">
+                                    <img src="./assets/m.png" alt="" />
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="email">emailhere@email.com</p>
+                    </footer>
+                    
+                </div>
+            </section>
+
+            <section class="contact-mobile">
                 <h4>CONTACT US</h4>
                 <p class="contact-info">
                     If you have an application you are interested in developing, a
                     feature that you need built or a project that needs coding. I’d love
                     to help with it
                 </p>
-                <form action="https://formspree.io/f/mdoybpze" method="POST">
-                    <ul class="input-form">
-                        <li>
-                            <input name="name" required type="text" placeholder="Type your name" maxlength="30" />
-                        </li>
-                        <li>
-                            <input type="email" placeholder="Type your email" required name="email" />
-                        </li>
-                        <li>
-                            <textarea name="text" maxlength="500" id="input" cols="40" rows="10" required
-                                placeholder="Enter text here"></textarea>
-                        </li>
-                        <li>
-                            <button class="btn-btn" type="submit">Submit</button>
-                        </li>
-                    </ul>
-                </form>
+                <div class="form-info">
+
+                    <form action="https://formspree.io/f/mdoybpze" method="POST">
+                        <ul class="input-form">
+                            <li>
+                                <input name="name" required type="text" placeholder="Type your name" maxlength="30" />
+                            </li>
+                            <li>
+                                <input type="email" placeholder="Type your email" required name="email" />
+                            </li>
+                            <li>
+                                <textarea name="text" maxlength="500" id="input" cols="40" rows="10" required
+                                    placeholder="Enter text here"></textarea>
+                            </li>
+                            <li>
+                                <button class="btn-btn" type="submit">Submit</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
                 <hr />
                 <footer>
                     <ul class="social-icons">
