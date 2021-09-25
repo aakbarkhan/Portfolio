@@ -1,7 +1,7 @@
 body {
   height: auto;
   width: 375px;
-  background-color: #210b54;
+  background-color: rgb(29,38,100);
   font-family: Roboto, sans-serif;
 }
 
@@ -12,7 +12,7 @@ body {
   align-items: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   body {
     width: auto;
     margin: 0 auto;
@@ -111,11 +111,15 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .desktop,
   .skills-desktop,
   .desktop-social-icon {
     display: none;
+  }
+
+  body {
+    margin: 0 auto;
   }
 
   .mobile-lang {
@@ -164,7 +168,7 @@ h2 {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .left,
   .recent {
     display: none;
@@ -230,7 +234,7 @@ h2 {
   margin-top: 40px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .outside {
     width: 96%;
     margin-top: 82px;
@@ -244,6 +248,8 @@ h2 {
 
   .card-image {
     width: 96%;
+    height: 97%;
+    text-align: unset;
   }
 }
 
@@ -311,9 +317,10 @@ h3 {
   text-align: center;
   padding: 10px;
   height: 236px;
+  margin-right: 27px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .work-desk {
     color: #9390ff;
     width: auto;
@@ -323,7 +330,7 @@ h3 {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .work-desk,
   .outside {
     display: none;
@@ -353,12 +360,13 @@ h3 {
   color: #dcdce8;
   text-align: center;
   text-align: justify;
-  margin-left: 20px;
   margin-right: 20px;
 }
 
 .languages {
   display: flex;
+  padding: 0;
+  margin-top: -20px;
 }
 
 .languages > li:not(:last-child) {
@@ -384,16 +392,16 @@ h5 {
 }
 
 .btn {
-  height: 50px;
+  height: 45px;
   background-color: #7d73fc;
-  margin-right: 225px;
+  margin-right: 250px;
   align-items: center;
   color: #edecff;
-  width: 89px;
+  width: 102px;
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .stoies {
     display: flex;
     flex-direction: column;
@@ -426,7 +434,7 @@ h5 {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .chat {
     display: none;
   }
@@ -460,7 +468,7 @@ h4 {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .contact-info {
     width: 545px;
     margin: 0 auto;
@@ -523,7 +531,7 @@ textarea {
   padding: 3px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   input {
     width: 545px;
   }
