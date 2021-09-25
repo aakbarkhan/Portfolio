@@ -5,6 +5,11 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+.discription:hover {
+  transition: width 2s, height 2s, transform 2s;
+  transform: rotate(180deg);
+}
+
 .heading {
   display: flex;
   width: 375px;
