@@ -334,6 +334,11 @@ h2 {
     width: 96%;
     height: 97%;
     text-align: unset;
+    transition: width 2s height 3s;
+  }
+  .card-image:hover{
+    width: 97%;
+    height: 88%;
   }
 }
 
