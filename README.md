@@ -29,7 +29,7 @@ The desktop version used media queries from 768px above and below 768px pixel is
 ## Live Demo
 
 The live page is:
-[Live Demo Link](https://aakbarkhan.github.io/Portfolio/)
+[Live Link](https://aakbarkhan.github.io/Portfolio/)
 
 
 ## Authors
