@@ -128,7 +128,7 @@ body {
 
   .discription:hover {
     transition: width 2s, height 2s, transform 2s;
-    transform: rotate(180deg);
+    transform: rotate(360deg);
   }
 
   .language-framework-desktop {
