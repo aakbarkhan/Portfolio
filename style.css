@@ -160,6 +160,11 @@ body {
   .arrow-icons {
     display: none;
   }
+
+  .fab {
+    font-size: 34px;
+    color: white;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -220,6 +225,11 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 40px;
+  }
+
+  .fab {
+    font-size: 34px;
+    color: white;
   }
 }
 
@@ -489,7 +499,7 @@ h5 {
 }
 
 @media screen and (min-width: 992px) {
-  .stoies {
+  .stories {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -528,6 +538,10 @@ h5 {
 
   textarea {
     width: 322px;
+  }
+
+  .btn-btn {
+    margin-left: 68px;
   }
 }
 

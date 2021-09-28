@@ -4,18 +4,18 @@
 
 > This project is Portfolio mobile version.
 
-![screenshot](./mobile-portfolio.png)
+![screenshot](./assets/mobile-portfolio.png)
 
 The toolbar contains logo and menu. The headline section is an introduction about the person.
 
-![](./galaxys5.png)
+![](./assets/galaxys5.png)
 
 The above section is the contact form and the footer in the portfolio.
 This mobile version is tested on galaxy S5.
 
-![](./desktop.png)
+![](./assets/desktop.png)
 
-![](./email.png)
+![](./assets/email.png)
 
 The desktop version used media queries from 768px above and below 768px pixel is mobile. 
 
