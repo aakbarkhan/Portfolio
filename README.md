@@ -17,7 +17,7 @@ This mobile version is tested on galaxy S5.
 
 ![](./assets/email.png)
 
-The desktop version used media queries from 768px above and below 768px pixel is mobile. 
+The desktop version used media queries above 992px and below 992px in mobile. 
 
 
 

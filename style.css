@@ -1,7 +1,7 @@
 body {
   height: auto;
   width: 375px;
-  background-color: #2f2156;
+  background-color: #1c2764;
   font-family: Roboto, sans-serif;
 }
 
@@ -603,7 +603,7 @@ textarea {
 
 .btn-btn {
   height: 50px;
-  background-color: #7d73fc;
+  background-color: #7e72fa;
   margin-top: 40px;
   color: #edecff;
   width: 89px;
