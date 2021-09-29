@@ -504,7 +504,7 @@ h5 {
   color: #edecff;
   width: 102px;
   margin-bottom: 20px;
-  filter: contrast(100%);
+  filter: contrast(200%);
 }
 
 @media screen and (min-width: 992px) {
@@ -551,6 +551,7 @@ h5 {
 
   .btn-btn {
     margin-left: 68px;
+    filter: contrast(200%);
   }
 }
 
@@ -614,8 +615,9 @@ textarea {
   background-color: #7e72fa;
   margin-top: 40px;
   color: #edecff;
-  width: 89px;
+  width: 100px;
   margin-bottom: 40px;
+  filter: contrast(200%);
 }
 
 .btn-btn:hover {
