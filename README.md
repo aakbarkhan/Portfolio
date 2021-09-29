@@ -26,6 +26,7 @@ The desktop version used media queries above 992px and below 992px in mobile.
 - Html&Css
 - Media queries
 - Linters
+- Animation and transition.
 ## Live Demo
 
 The live page is:
