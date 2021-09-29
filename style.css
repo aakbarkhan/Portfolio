@@ -1,7 +1,7 @@
 body {
   height: auto;
   width: 375px;
-  background-color: #1c2764;
+  background-color: #1d2664;
   font-family: Roboto, sans-serif;
 }
 
@@ -429,9 +429,9 @@ h3 {
     color: #9390ff;
     width: auto;
     padding: 0;
+    margin-left: 20px;
     margin-bottom: -48px;
     text-align: left;
-    margin-left: 20px;
   }
 }
 
