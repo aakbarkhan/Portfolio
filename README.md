@@ -59,13 +59,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
-
-Page titles [done]
-Image text alternatives** (<img alt="alt text">) [done]
-Text headings []
-Color contrast []
-Resize [x]
-Interaction [x]
-Moving content [x]
-Multimedia [X]
-The basic structure of the page []

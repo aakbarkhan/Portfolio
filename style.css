@@ -319,6 +319,12 @@ h2 {
   margin-left: 300px;
 }
 
+.lang {
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: #9490ff;
+}
+
 .social-icons {
   display: flex;
   justify-content: center;
@@ -383,7 +389,8 @@ hr {
 }
 
 h3 {
-  color: #a2a3ae;
+  margin-left: 40px;
+  color: #9490ff;
 }
 
 .work {
@@ -422,8 +429,9 @@ h3 {
     color: #9390ff;
     width: auto;
     padding: 0;
-    margin-left: 20px;
     margin-bottom: -48px;
+    text-align: left;
+    margin-left: 20px;
   }
 }
 
@@ -496,6 +504,7 @@ h5 {
   color: #edecff;
   width: 102px;
   margin-bottom: 20px;
+  filter: contrast(100%);
 }
 
 @media screen and (min-width: 992px) {
@@ -547,7 +556,6 @@ h5 {
 
 .btn:hover {
   cursor: pointer;
-  background-color: #a2a3ae;
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -612,7 +620,6 @@ textarea {
 
 .btn-btn:hover {
   cursor: pointer;
-  background-color: #a2a3ae;
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
