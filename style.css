@@ -174,15 +174,15 @@ body {
     display: none;
   }
 
+  .logo {
+    font-size: 30px;
+  }
+
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-
-  .showMenu {
-    transform: translateY(0);
-  }
+  }  
 
   .nav-tag {
     display: block;
@@ -210,21 +210,28 @@ body {
   .closeIcon {
     display: none;
   }
+  
 
   .menuMenu {
     position: fixed;
-    transform: translateY(-100%);
-    transition: transform 0.2s;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
     height: 100%;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 99;
-    background: black;
+    background: blue;
     color: white;
     list-style: none;
     padding-top: 4rem;
+  }
+
+  .showMenu {
+    
+    transform: translateX(0);
+    
   }
 
   body {
