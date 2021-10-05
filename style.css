@@ -186,7 +186,7 @@ body {
   .nav-tag {
     display: flex;
     justify-content: space-between;
-    margin: 2rem 3.4rem;
+    margin: 3rem 3.4rem;
     font-size: 1.8rem;
     color: white;
     text-decoration: none;
@@ -241,8 +241,13 @@ body {
     margin: 0 auto;
   }
 
+  .menuMenu > li:nth-child(1) {
+    padding-top: 12%;
+  }
+
   span {
-    text-align-last: right;
+    font-size: 18px;
+    color: #7e72fa;
   }
 
   span:hover {
