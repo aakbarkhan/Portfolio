@@ -1,7 +1,7 @@
 body {
   height: auto;
   width: 375px;
-  background-color: #2f2156;
+  background-color: #1d2664;
   font-family: Roboto, sans-serif;
 }
 
@@ -319,6 +319,12 @@ h2 {
   margin-left: 300px;
 }
 
+.lang {
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: #9490ff;
+}
+
 .social-icons {
   display: flex;
   justify-content: center;
@@ -383,7 +389,8 @@ hr {
 }
 
 h3 {
-  color: #a2a3ae;
+  margin-left: 40px;
+  color: #9490ff;
 }
 
 .work {
@@ -424,6 +431,7 @@ h3 {
     padding: 0;
     margin-left: 20px;
     margin-bottom: -48px;
+    text-align: left;
   }
 }
 
@@ -496,6 +504,7 @@ h5 {
   color: #edecff;
   width: 102px;
   margin-bottom: 20px;
+  filter: contrast(200%);
 }
 
 @media screen and (min-width: 992px) {
@@ -542,12 +551,12 @@ h5 {
 
   .btn-btn {
     margin-left: 68px;
+    filter: contrast(200%);
   }
 }
 
 .btn:hover {
   cursor: pointer;
-  background-color: #a2a3ae;
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -603,16 +612,16 @@ textarea {
 
 .btn-btn {
   height: 50px;
-  background-color: #7d73fc;
+  background-color: #7e72fa;
   margin-top: 40px;
   color: #edecff;
-  width: 89px;
+  width: 100px;
   margin-bottom: 40px;
+  filter: contrast(200%);
 }
 
 .btn-btn:hover {
   cursor: pointer;
-  background-color: #a2a3ae;
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
