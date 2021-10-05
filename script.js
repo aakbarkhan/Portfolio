@@ -3,21 +3,7 @@ const menuItems = document.querySelectorAll(".nav-tag");
 const hamburger =  document.querySelector(".hamburger");
 const closeIcon = document.querySelector(".closeIcon");
 const menuIcon = document.querySelector(".menuIcon");
-
-// menu.innerHTML = `
-
-//         <li class="nav-tag">
-//         <a  href="#">Portfolio</a>
-//         </li>
-//         <li class="nav-tag">
-//         <a  href="#">About</a>
-//         </li>
-//         <li class="nav-tag">
-//         <a  href="#">Contact</a>
-//         </li>
-        
-// `
-
+closeIcon.style.display = "none";
 function toggleMenu() {
     if(menu.classList.contains("showMenu")) {
         menu.classList.remove("showMenu");
@@ -31,3 +17,11 @@ function toggleMenu() {
 }
 
 hamburger.addEventListener('click', toggleMenu);
+
+menuItems.forEach( 
+    function(menuItem) { 
+      menuItem.addEventListener("click", toggleMenu);
+    }
+  )
+
+  

@@ -182,11 +182,12 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }  
+  }
 
   .nav-tag {
-    display: block;
-    margin: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 1.4rem;
     font-size: 1.8rem;
     color: white;
     text-decoration: none;
@@ -197,9 +198,8 @@ body {
   }
 
   .hamburger {
-    position: fixed;
+    position: relative;
     z-index: 100;
-    top: 1rem;
     right: 1rem;
     padding: 4px;
     border: black solid 1px;
@@ -207,31 +207,52 @@ body {
     cursor: pointer;
   }
 
-  .closeIcon {
-    display: none;
-  }
-  
-
   .menuMenu {
     position: fixed;
     transform: translateX(-100%);
     transition: transform 0.5s;
-    height: 100%;
+    height: 900px;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 99;
-    background: blue;
+    background: #191765;
     color: white;
     list-style: none;
     padding-top: 4rem;
+    width: 375px;
+  }
+
+  .menuMenu .nav-tag a {
+    color: white;
+    text-decoration: none;
   }
 
   .showMenu {
-    
     transform: translateX(0);
-    
+    margin: 0 auto;
+  }
+
+  span {
+    text-align-last: right;
+  }
+
+  span:hover {
+    cursor: pointer;
+  }
+
+  .mobile-bg {
+    position: absolute;
+    margin-top: -60px;
+    margin-left: -20px;
+  }
+
+  .mobile-bgg {
+    position: absolute;
+    margin-top: 306px;
+    width: 300px;
+    margin-left: 51px;
   }
 
   body {
