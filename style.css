@@ -10,6 +10,7 @@ body {
   width: 375px;
   justify-content: space-between;
   align-items: center;
+  height: 50px;
 }
 
 @media screen and (min-width: 992px) {
@@ -102,6 +103,10 @@ body {
     cursor: pointer;
   }
 
+  .nav-tag:hover {
+    cursor: pointer;
+  }
+
   .job-title {
     display: grid;
     grid-template-columns: 100%;
@@ -178,12 +183,6 @@ body {
     font-size: 30px;
   }
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
   .nav-tag {
     display: flex;
     justify-content: space-between;
@@ -202,9 +201,10 @@ body {
     z-index: 100;
     right: 1rem;
     padding: 4px;
-    border: black solid 1px;
-    background: white;
+    background: transparent;
     cursor: pointer;
+    border: none;
+    color: white;
   }
 
   .menuMenu {
@@ -218,15 +218,22 @@ body {
     bottom: 0;
     z-index: 99;
     background: #191765;
-    color: white;
+    color: transparent;
     list-style: none;
     padding-top: 4rem;
     width: 375px;
+    background-image: url(./assets/shapemobile2.png);
+    background-repeat: no-repeat;
+    background-size: 30px 10px;
   }
 
   .menuMenu .nav-tag a {
     color: white;
     text-decoration: none;
+  }
+
+  .closeIcon {
+    position: fixed;
   }
 
   .showMenu {
@@ -240,19 +247,6 @@ body {
 
   span:hover {
     cursor: pointer;
-  }
-
-  .mobile-bg {
-    position: absolute;
-    margin-top: -60px;
-    margin-left: -20px;
-  }
-
-  .mobile-bgg {
-    position: absolute;
-    margin-top: 306px;
-    width: 300px;
-    margin-left: 51px;
   }
 
   body {
