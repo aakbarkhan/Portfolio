@@ -235,9 +235,9 @@ body {
 
   .closeIcon {
     position: fixed;
-    margin-left: -12px;
+    margin-left: -21px;
     z-index: 100;
-    margin-top: -13px;
+    margin-top: -17px;
   }
 
   .showMenu {
