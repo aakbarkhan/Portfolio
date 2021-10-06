@@ -2,7 +2,7 @@ body {
   height: auto;
   width: 375px;
   background-color: #1d2664;
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .heading {
@@ -10,6 +10,7 @@ body {
   width: 375px;
   justify-content: space-between;
   align-items: center;
+  height: 50px;
 }
 
 @media screen and (min-width: 992px) {
@@ -102,6 +103,10 @@ body {
     cursor: pointer;
   }
 
+  .nav-tag:hover {
+    cursor: pointer;
+  }
+
   .job-title {
     display: grid;
     grid-template-columns: 100%;
@@ -172,6 +177,85 @@ body {
   .skills-desktop,
   .desktop-social-icon {
     display: none;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  .nav-tag {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 3.4rem;
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  .nav-tag:hover {
+    text-decoration: none;
+  }
+
+  .hamburger {
+    position: relative;
+    z-index: 100;
+    right: 1rem;
+    padding: 4px;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 26px;
+  }
+
+  .menuMenu {
+    position: fixed;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+    height: 900px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: #191765;
+    color: transparent;
+    list-style: none;
+    padding-top: 4rem;
+    width: 375px;
+    background-image: url(./assets/shapemobile2.png);
+    background-repeat: no-repeat;
+    background-size: 30px 10px;
+  }
+
+  .menuMenu .nav-tag a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .closeIcon {
+    position: fixed;
+    margin-left: -21px;
+    z-index: 100;
+    margin-top: -17px;
+  }
+
+  .showMenu {
+    transform: translateX(0);
+    margin: 0 auto;
+  }
+
+  .menuMenu > li:nth-child(1) {
+    padding-top: 12%;
+  }
+
+  span {
+    font-size: 18px;
+    color: #7e72fa;
+  }
+
+  span:hover {
+    cursor: pointer;
   }
 
   body {
@@ -246,7 +330,7 @@ body {
 h1 {
   color: #7d73fc;
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bold;
   letter-spacing: 0.37px;
   font-size: 48px;

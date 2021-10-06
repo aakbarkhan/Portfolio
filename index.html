@@ -25,9 +25,29 @@
         <header class="heading">
             <a class="logo" href="#"> Aku </a>
             <nav class="mobile">
-                <a href="#">
-                    <img class="menu" src="./assets/menu_white_24dp.svg" alt="menu_bar" />
-                </a>
+                <ul class="menuMenu">
+                    <li class="nav-tag">
+                        
+                        <a  href="#opening">Portfolio</a>
+                        <span>&gt;</span> 
+                        </li>
+                        <li class="nav-tag">
+                        <a  href="#add-info">About</a>
+                        <span>&gt;</span>
+                        </li>
+                        <li class="nav-tag">
+                        <a  href="#please-info">Contact</a>
+                        <span>&gt;</span>
+                        </li>
+                        <li>
+                            <img class="mobile-bg" src="./assets/shapemobile2.png" alt=" ">
+
+                        </li>
+                </ul>
+                <button type="button" class ="hamburger"> 
+                    <i class="menuIcon fas fa-bars"> </i>
+                    <i class="closeIcon fas fa-times"></i>
+                </button>
             </nav>
         </header>
         <header class="desktop">
@@ -50,13 +70,13 @@
                 </ul>
             </nav>
         </header>
-        <section class="job-title">
+        <section id="add-info" class="job-title">
             <div class="person-name">
                 <h1>Aku</h1>
-                <h2 class="title">Software Developer</h2>
+                <h2  class="title">Software Developer</h2>
                 <img class="ellipse" src="./assets/Ellipse18.png" alt=" " />
                 <div class="discribe">
-                    <p class="discription">
+                    <p  class="discription">
                         I can help you build a product, feature or website Look through some
                         of my work and experience! If you like what you see and have a
                         project you need coded, don't hasitate to contact me.
@@ -183,7 +203,10 @@
             <h2 class="work-desk">My recent work</h2>
         </div>
         <hr class="outside" />
-        <section class="works">
+        <section class="model">
+
+        </section>
+        <section id="opening" class="works">
             <div class="work">
                 <img class="arrow-icons" src="./assets/ElementRight.png" alt=" " />
                 <h2 class="left">MY RECENT WORK</h2>
@@ -267,7 +290,7 @@
                     </div>
                 </div>
             </div>
-            <section class="chat">
+            <section  class="chat">
                 <h4>Let's chat!</h4>
                 <p class="contact-info">
                     If you have an application you are interested in developing, a
@@ -326,8 +349,8 @@
                     
                 </div>
             </section>
-            <section class="contact-mobile">
-                <h4>CONTACT US</h4>
+            <section  class="contact-mobile">
+                <h4 id="please-info">CONTACT US</h4>
                 <p class="contact-info">
                     If you have an application you are interested in developing, a
                     feature that you need built or a project that needs coding. I’d love
@@ -392,5 +415,6 @@
             </section>
         </section>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
