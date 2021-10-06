@@ -234,6 +234,7 @@ body {
 
   .closeIcon {
     position: fixed;
+    margin-left: -27px;
   }
 
   .showMenu {
