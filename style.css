@@ -205,6 +205,7 @@ body {
     cursor: pointer;
     border: none;
     color: white;
+    font-size: 20px;
   }
 
   .menuMenu {
