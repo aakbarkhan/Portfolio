@@ -26,39 +26,29 @@ menuItems.forEach(
 
 
 // mobile popup
-
-
-
-function Card (title, image) {
-    this.title = title;
-    this.image=image;
-    this.text='Lorem ipsum dolor sit amet, consectetur adipiscing\
+const data = [
+  {
+    title: 'MULTI-POST STORIES',
+    image:'assets/SnapshootPortfolio.png',
+    text:'Lorem ipsum dolor sit amet, consectetur adipiscing\
       elit, sed do eiusmod tempor incididunt ut labore et dolore \
       magna aliqua. Sem et tortor consequat id porta nibh. Velit \
       aliquet sagittis id consectetur. Urna id volutpat lacus laoreet.\
       Fames ac turpis egestas integer eget aliquet nibh praesent \
       tristique. Egestas diam in arcu cursus euismod quis viverra \
-      nibh. Nisl rhoncus mattis rhoncus urna neque.';
-    this.languages={
-      'first' : 'html',
-      'second' : 'css',
-      'third' : 'javaScript',
-      'fourth' : 'github',
-      'fifth' : 'ruby',
-      'sixth' : 'Bootstrap'
-    };
-    this.links={
-      'live' : 'See Live',
-      'source' : 'See Source',
-    }
-  };
-   
-  let card1 = new Card('MULTI-POST STORIES','assets/SnapshootPortfolio.png');
-  let card2 = new Card('MULTI-POST STORIES','assets/SnapshootPortfolio.png');
-  let card3 = new Card('MULTI-POST STORIES','assets/SnapshootPortfolio.png');
-  let card4 = new Card('MULTI-POST STORIES', 'assets/SnapshootPortfolio.png');
+      nibh. Nisl rhoncus mattis rhoncus urna neque.',
+    languages:['html','css','javaScript','github','Ruby on rails','Bootstrap'],
+    live : 'See Live',
+    source: 'See Source'    
+  }
+]
 
-  function cardGenerate(card1) {
+  // let card1 = new Card('MULTI-POST STORIES','assets/SnapshootPortfolio.png');
+  // let card2 = new Card('MULTI-POST STORIES','assets/SnapshootPortfolio.png');
+  // let card3 = new Card('MULTI-POST STORIES','assets/SnapshootPortfolio.png');
+  // let card4 = new Card('MULTI-POST STORIES', 'assets/SnapshootPortfolio.png');
+
+  function cardGenerate(data) {
     const page = document.createElement('div');
     page.className = 'modelPage';
     
@@ -90,25 +80,25 @@ function Card (title, image) {
       page.appendChild(btn1);
       page.appendChild(btn2);
       
-      img.src = 'assets/SnapshootPortfolio.png';
+      img.src = data[0].image;
       img.className = 'project-image';
-      title.innerText = card1.title;
+      title.innerText = data[0].title;
       span.innerText = 'x';
 
-      para.innerText = card1.text;
+      para.innerText = data.text;
       para.className = 'para1'
-      list1.innerText = card1.languages.first;
-      list2.innerText = card1.languages.second;
-      list3.innerText = card1.languages.third;
-      btn1.innerText = card1.links.live;
-      btn2.innerText = card1.links.source;
+      list1.innerText = data[0].languages[0];
+      list2.innerText = data[0].languages[4];
+      list3.innerText = data[0].languages[2];
+      btn1.innerText = data[0].live;
+      btn2.innerText = data[0].source;
       const mainContent = document.querySelector('.main');
 
       return mainContent.appendChild(page);
 
   }
   
-  const btn = document.querySelector('.btn');
+  const btn = document.querySelectorAll('.btn');
   console.log(btn)
 
   
@@ -116,30 +106,21 @@ function Card (title, image) {
   // const model = document.querySelector('.page');
   
   function popUp() {    
-    document.body.appendChild(cardGenerate(card1));
-    // model.classList.add('showMenu');
-    // model.style.display = "block";
-    // model.style.display = 'block'
+    document.body.appendChild(cardGenerate(data));
     console.log('clicked!');    
-    // const model = document.body.querySelector('.modelPage');
-    // console.log(model)   
-    let searchClosebtn = document.querySelector('#closebtn');
-    console.log(searchClosebtn);
-    if (searchClosebtn.classList.contains(closebtn)){
-      page.style.display = "none";
-    }
-  }
-  
-  
-  // function closePopup() {
-    //   model.classList.remove('showMenu')
-    //   model.style.display = "none";
-    //   console.log('hide')
-    // }
     
-  
-  btn.addEventListener('click',popUp );
- 
+      let  del = document.querySelector('.modelPage');
+      let  closeBtn = document.querySelector('.closebtn');
+      console.log(del);
+      closeBtn.addEventListener('click', ()=> {
+        document.body.removeChild(del);
+        console.log(del)
+      })
+  }
+  btn[0].addEventListener('click',popUp );
+  btn[1].addEventListener('click',popUp );
+  btn[2].addEventListener('click',popUp );  
+  btn[3].addEventListener('click',popUp );
   // closeBtn.addEventListener('click',closePopup );
   
 // let arr = ["Portfolio","About","Contact"]

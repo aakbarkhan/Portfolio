@@ -247,12 +247,13 @@ body {
 
   .closebtn {
     position: relative;
-    right: -153px;
+    right: -325px;
     top: -62px;
     background: none;
     color: white;
     border: none;
     font-size: 18px;
+    width: 11px;
   }
 
   .project-image {
