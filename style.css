@@ -175,7 +175,8 @@ body {
 @media screen and (max-width: 992px) {
   .desktop,
   .skills-desktop,
-  .desktop-social-icon {
+  .desktop-social-icon,
+  .model {
     display: none;
   }
 
@@ -210,7 +211,7 @@ body {
 
   .menuMenu {
     position: fixed;
-    transform: translateX(-100%);
+    transform: translateX(-200%);
     transition: transform 0.5s;
     height: 900px;
     top: 0;
@@ -226,6 +227,52 @@ body {
     background-image: url(./assets/shapemobile2.png);
     background-repeat: no-repeat;
     background-size: 30px 10px;
+    margin: 0 auto;
+  }
+
+  .showModel {
+    transform: translateX(0);
+  }
+
+  .modelPage {
+    position: fixed;
+    width: 365px;
+    height: auto;
+    top: 8vh;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #646369;
+  }
+
+  .closebtn {
+    position: relative;
+    right: -153px;
+    top: -62px;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 18px;
+  }
+
+  .project-image {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .para1 {
+    margin: 19px 18px;
+    text-align: justify;
+    height: 154px;
+  }
+
+  .frameworks {
+    height: 13%;
+  }
+
+  .lang-pop {
+    display: flex;
+    justify-content: space-between;
   }
 
   .menuMenu .nav-tag a {
@@ -242,7 +289,6 @@ body {
 
   .showMenu {
     transform: translateX(0);
-    margin: 0 auto;
   }
 
   .menuMenu > li:nth-child(1) {
