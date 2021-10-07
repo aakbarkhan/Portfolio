@@ -115,20 +115,26 @@ function Card (title, image) {
   //   popup function
   // const model = document.querySelector('.page');
   
-  function popUp() {    
+  function popUp() {
     document.body.appendChild(cardGenerate(card1));
     // model.classList.add('showMenu');
     // model.style.display = "block";
     // model.style.display = 'block'
-    console.log('clicked!');    
+    console.log('clicked!');
     // const model = document.body.querySelector('.modelPage');
-    // console.log(model)   
-    let searchClosebtn = document.querySelector('#closebtn');
-    console.log(searchClosebtn);
-    if (searchClosebtn.classList.contains(closebtn)){
-      page.style.display = "none";
-    }
+    // console.log(model)
+    const closeBtn = document.querySelector('.closebtn');
+    console.log(closeBtn)
+      let  del = document.querySelector('.modelPage');
+      let  dele = document.querySelector('.closebtn');
+      console.log(del);
+      dele.addEventListener('click', ()=> {
+        console.log('del')
+        document.body.removeChild(del);
+      })
   }
+
+  
   
   
   // function closePopup() {
@@ -161,3 +167,10 @@ function Card (title, image) {
 
 //   const mobile = document.querySelector('.mobile');
 //   mobile.appendChild(listItems(arr));
+let searchClosebtn = document.querySelector('.closebtn');
+    console.log(searchClosebtn);
+    searchClosebtn.addEventListener('click',()=>{
+    console.log("Hello");  
+    
+  }
+    )
