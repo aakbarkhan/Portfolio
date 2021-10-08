@@ -38,7 +38,46 @@ const data = [
       tristique.',
     languages:['html','css','javaScript','github','Ruby on rails','Bootstrap'],
     live : 'See Live',
-    source: 'See Source'    
+    source: 'See Source' 
+  },
+  {
+    title: 'Multi-Post stories',
+    image:'assets/SnapshootPortfolio.png',
+    text:'Lorem ipsum dolor sit amet, consectetur adipiscing\
+      elit, sed do eiusmod tempor incididunt ut labore et dolore \
+      magna aliqua. Sem et tortor consequat id porta nibh. Velit \
+      aliquet sagittis id consectetur. Urna id volutpat lacus laoreet.\
+      Fames ac turpis egestas integer eget aliquet nibh praesent \
+      tristique.',
+    languages:['html','css','javaScript','github','Ruby on rails','Bootstrap'],
+    live : 'See Live',
+    source: 'See Source' 
+  },
+  {
+    title: 'Multi-Post stories',
+    image:'assets/SnapshootPortfolio.png',
+    text:'Lorem ipsum dolor sit amet, consectetur adipiscing\
+      elit, sed do eiusmod tempor incididunt ut labore et dolore \
+      magna aliqua. Sem et tortor consequat id porta nibh. Velit \
+      aliquet sagittis id consectetur. Urna id volutpat lacus laoreet.\
+      Fames ac turpis egestas integer eget aliquet nibh praesent \
+      tristique.',
+    languages:['html','css','javaScript','github','Ruby on rails','Bootstrap'],
+    live : 'See Live',
+    source: 'See Source' 
+  },
+  {
+    title: 'Multi-Post stories',
+    image:'assets/SnapshootPortfolio.png',
+    text:'Lorem ipsum dolor sit amet, consectetur adipiscing\
+      elit, sed do eiusmod tempor incididunt ut labore et dolore \
+      magna aliqua. Sem et tortor consequat id porta nibh. Velit \
+      aliquet sagittis id consectetur. Urna id volutpat lacus laoreet.\
+      Fames ac turpis egestas integer eget aliquet nibh praesent \
+      tristique.',
+    languages:['html','css','javaScript','github','Ruby on rails','Bootstrap'],
+    live : 'See Live',
+    source: 'See Source' 
   }
 ]
 
@@ -141,3 +180,40 @@ const data = [
 
 //   const mobile = document.querySelector('.mobile');
 //   mobile.appendChild(listItems(arr));
+
+function desktopPop(data) {
+  div.innerHTML = data.map( (item,index) =>{
+    // console.log(item);
+    // console.log(index)
+    console.log(`${item.title}`);
+    return (
+      `
+      <div>${item.title}</div>
+      
+  //     <div class="desktoppopup">
+  //     <div class="head">
+  //         <h2>Multi-post story</h2>
+  //         <button>&times;</button>
+  //     </div>
+  //     <img src="./assets/SnapshootPortfolio.png" alt="">
+  //     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.</p>
+  //     <ul class="frameworks">
+  //         <li>Html</li>
+  //         <li>Ruby on rails</li>
+  //         <li>css</li>
+  //         <li>Github</li>
+
+  //     </ul>
+  //     <div class="links">
+  //         <button>See Live</button>
+  //         <button>See Source <i class="fab fa-linkedin-in"></i></button>
+  //     </div>
+  //  </div>   
+    
+    `
+    )
+
+
+  })
+
+}

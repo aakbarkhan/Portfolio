@@ -170,6 +170,11 @@ body {
     font-size: 34px;
     color: white;
   }
+
+  .head,
+  .frameworks {
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 992px) {
