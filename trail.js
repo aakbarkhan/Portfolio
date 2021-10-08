@@ -28,32 +28,27 @@ menuItems.forEach(
 // mobile popup
 const data = [
   {
-    title: 'MULTI-POST STORIES',
+    title: 'Multi-Post stories',
     image:'assets/SnapshootPortfolio.png',
     text:'Lorem ipsum dolor sit amet, consectetur adipiscing\
       elit, sed do eiusmod tempor incididunt ut labore et dolore \
       magna aliqua. Sem et tortor consequat id porta nibh. Velit \
       aliquet sagittis id consectetur. Urna id volutpat lacus laoreet.\
       Fames ac turpis egestas integer eget aliquet nibh praesent \
-      tristique. Egestas diam in arcu cursus euismod quis viverra \
-      nibh. Nisl rhoncus mattis rhoncus urna neque.',
+      tristique.',
     languages:['html','css','javaScript','github','Ruby on rails','Bootstrap'],
     live : 'See Live',
     source: 'See Source'    
   }
 ]
 
-  // let card1 = new Card('MULTI-POST STORIES','assets/SnapshootPortfolio.png');
-  // let card2 = new Card('MULTI-POST STORIES','assets/SnapshootPortfolio.png');
-  // let card3 = new Card('MULTI-POST STORIES','assets/SnapshootPortfolio.png');
-  // let card4 = new Card('MULTI-POST STORIES', 'assets/SnapshootPortfolio.png');
 
   function cardGenerate(data) {
     const page = document.createElement('div');
     page.className = 'modelPage';
     
     const title = document.createElement('h2');
-  
+    title.className = 'port-title'
     const span = document.createElement('button');
     span.className = "closebtn"
     const img = document.createElement('img');
@@ -66,7 +61,10 @@ const data = [
     const list2 = document.createElement('li');
     const list3 = document.createElement('li');
     const btn1 =  document.createElement('button');
+    btn1.className = 'live';
+    
     const btn2 =  document.createElement('button');
+    btn2.className = 'source';
     
       page.appendChild(title);
       page.appendChild(span);
@@ -85,13 +83,14 @@ const data = [
       title.innerText = data[0].title;
       span.innerText = 'x';
 
-      para.innerText = data.text;
+      para.innerText = data[0].text;
       para.className = 'para1'
       list1.innerText = data[0].languages[0];
       list2.innerText = data[0].languages[4];
       list3.innerText = data[0].languages[2];
-      btn1.innerText = data[0].live;
-      btn2.innerText = data[0].source;
+      // btn1.innerText = data[0].live;
+      btn1.innerText =data[0].live;
+      btn2.innerHTML = `${data[0].source}` +'<i class="fab fa-github"></i>';
       const mainContent = document.querySelector('.main');
 
       return mainContent.appendChild(page);
