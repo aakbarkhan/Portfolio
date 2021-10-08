@@ -41,7 +41,7 @@ const data = [
     source: 'See Source' 
   },
   {
-    title: 'Multi-Post stories',
+    title: 'Google',
     image:'assets/SnapshootPortfolio.png',
     text:'Lorem ipsum dolor sit amet, consectetur adipiscing\
       elit, sed do eiusmod tempor incididunt ut labore et dolore \
@@ -54,7 +54,7 @@ const data = [
     source: 'See Source' 
   },
   {
-    title: 'Multi-Post stories',
+    title: 'Facebook',
     image:'assets/SnapshootPortfolio.png',
     text:'Lorem ipsum dolor sit amet, consectetur adipiscing\
       elit, sed do eiusmod tempor incididunt ut labore et dolore \
@@ -67,7 +67,7 @@ const data = [
     source: 'See Source' 
   },
   {
-    title: 'Multi-Post stories',
+    title: 'Portfolio',
     image:'assets/SnapshootPortfolio.png',
     text:'Lorem ipsum dolor sit amet, consectetur adipiscing\
       elit, sed do eiusmod tempor incididunt ut labore et dolore \
@@ -136,8 +136,8 @@ const data = [
 
   }
   
-  const btn = document.querySelectorAll('.btn');
-  console.log(btn)
+  const btnn = document.querySelectorAll('.btn');
+  // console.log(btn)
 
   
   //   popup function
@@ -152,68 +152,69 @@ const data = [
       console.log(del);
       closeBtn.addEventListener('click', ()=> {
         document.body.removeChild(del);
-        console.log(del)
+        console.log("del")
       })
   }
-  btn[0].addEventListener('click',popUp );
-  btn[1].addEventListener('click',popUp );
-  btn[2].addEventListener('click',popUp );  
-  btn[3].addEventListener('click',popUp );
-  // closeBtn.addEventListener('click',closePopup );
   
-// let arr = ["Portfolio","About","Contact"]
-//   function listItems(arr){
-//       let unorderList = document.createElement('ul');
-//       unorderList.setAttribute('class','menuMenu')
+  var btnsMobileArr = Array.from(btnn);
 
-//       for (let i = 0; i < arr.length; i++) {
-//           let list = document.createElement('li');
-//           list.setAttribute('class','nav-tag');
-//           list.appendChild(document.createTextNode(arr[i]));
-//           unorderList.appendChild(list)
-//       }
+  btnsMobileArr.forEach((btn, idx) => {
+    btn.setAttribute('id', idx);
+      console.log(btn,idx)
+    btnn[idx].addEventListener('click',popUp );
+    btnn[idx].addEventListener('click',()=>{
+      // btnn[idx].disabled = true;  
+    } )
+  })
+  
 
-//       return unorderList;
-//   }
-
-//   console.log(listItems(arr));
-
-//   const mobile = document.querySelector('.mobile');
-//   mobile.appendChild(listItems(arr));
 
 function desktopPop(data) {
-  div.innerHTML = data.map( (item,index) =>{
-    // console.log(item);
-    // console.log(index)
-    console.log(`${item.title}`);
+  const desktop = document.querySelector('.desktopPage');
+  desktop.innerHTML = data.map( (item,index) =>{
+
     return (
       `
-      <div>${item.title}</div>
-      
-  //     <div class="desktoppopup">
-  //     <div class="head">
-  //         <h2>Multi-post story</h2>
-  //         <button>&times;</button>
-  //     </div>
-  //     <img src="./assets/SnapshootPortfolio.png" alt="">
-  //     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.</p>
-  //     <ul class="frameworks">
-  //         <li>Html</li>
-  //         <li>Ruby on rails</li>
-  //         <li>css</li>
-  //         <li>Github</li>
-
-  //     </ul>
-  //     <div class="links">
-  //         <button>See Live</button>
-  //         <button>See Source <i class="fab fa-linkedin-in"></i></button>
-  //     </div>
-  //  </div>   
-    
+      <div class="desktoppopup">
+      <div class="head">
+      <h2 class ="">${item.title}</h2>
+      <button class="cross-btn">&times;</button>
+      </div>
+      <img src=${'assets/SnapshootPortfolio.png'} alt="">
+      <p>${item.text}</p>
+      <ul class="frameworks">
+        <li class="lang-pop">${item.languages[0]}</li>
+        <li class="lang-pop">${item.languages[2]}</li>
+        <li class="lang-pop">${item.languages[4]}</li>
+        <li class="lang-pop">${item.languages[1]}</li>
+      </ul>
+      <div class="links">
+          <button class="live">See Live</button>
+          <button class"source">See Source <i class="fab fa-linkedin-in"></i></button>
+          </div>
+      </div>    
     `
     )
-
-
   })
-
 }
+const desktop = document.querySelector('.desktopPage');
+desktopPop(data)
+desktop.style.display = 'none';
+// select the button
+const btnDesktop = document.querySelectorAll('.btn');
+var btnsArr = Array.from(btnDesktop);
+// console.log(btnsArr);
+btnsArr.forEach((btn, idx) => {
+  btn.setAttribute('id', idx)
+    console.log(btn,idx)
+})
+// select the title of the page 
+const desktoppopup = document.querySelectorAll('.desktoppopup');
+var desktopArr = Array.from(desktoppopup);
+// console.log(desktopArr); // array 
+desktopArr.forEach((btn, idx) => {
+  btn.setAttribute('id', idx)
+    console.log(btn,idx)
+})
+
+// link the title with the button.
