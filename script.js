@@ -121,6 +121,14 @@ function cardGenerate(data) {
 
   btn1.innerHTML = `${data[0].live} <img id="live-btn" src="./live.png" alt="btn">`;
   btn2.innerHTML = `${data[0].source} <i id="github" class="fab fa-github"></i>`;
+
+  const [language1, language2, language3] = data[i].languages;
+  list1.innerText = language1;
+  list2.innerText = language2;
+  list3.innerText = language3;
+
+  btn1.innerHTML = `${data[i].live}<img id="live-btn" src="./live.png" alt="btn">`;
+  btn2.innerHTML = `${data[i].source}<i id="github" class="fab fa-github"></i>`;
   const mainContent = document.querySelector('.main');
 
   return mainContent.appendChild(page);
