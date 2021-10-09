@@ -317,14 +317,15 @@
                     feature that you need built or a project that needs coding. I’d love
                     to help with it
                 </p>
-                <div class="form-info">
+                <div class="form-info" id="contact-form">
                     <form action="https://formspree.io/f/mdoybpze" method="POST">
+                        <span id="warningtxt"></span> 
                         <ul class="input-form">
                             <li>
                                 <input name="name" required type="text" placeholder="Type your name" maxlength="30" />
                             </li>
                             <li>
-                                <input type="email" placeholder="Type your email" required name="email" />
+                                <input id="email" type="email" placeholder="Type your email" required name="email" />
                             </li>
                             <li>
                                 <textarea name="text" maxlength="500" id="in" cols="68" rows="10" required
@@ -369,15 +370,16 @@
                     
                 </div>
             </section>
-            <section  class="contact-mobile">
+            <section  class="contact-mobile" >
                 <h4 id="please-info">CONTACT US</h4>
                 <p class="contact-info">
                     If you have an application you are interested in developing, a
                     feature that you need built or a project that needs coding. I’d love
                     to help with it
                 </p>
-                <div class="form-info">
+                <div class="form-info" id="contact-formm">
                     <form action="https://formspree.io/f/mdoybpze" method="POST">
+                        <span id="warningtxtt"></span>
                         <ul class="input-form">
                             <li>
                                 <label for="name">
@@ -385,8 +387,8 @@
                                 </label>
                             </li>
                             <li>
-                                <label for="email">
-                                    <input type="email" placeholder="Type your email" required name="email" id="email" aria-label="name"/>
+                                <label for="emaill">
+                                    <input id='emaill' type="email" placeholder="Type your email" required name="email" id="email" aria-label="name"/>
                                 </label>
                             </li>
                             <li>
@@ -442,5 +444,6 @@
     </div>
     </div>
     <script src="script.js"></script>
+    <script src="validation.js"></script>
 </body>
 </html>

@@ -188,6 +188,15 @@ body {
     display: none;
   }
 
+  #warningtxtt {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 1rem;
+    color: red;
+  }
+
   .logo {
     font-size: 30px;
   }
@@ -951,6 +960,15 @@ textarea {
 @media screen and (min-width: 992px) {
   input {
     width: 553px;
+  }
+
+  #warningtxt {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 1rem;
+    color: red;
   }
 
   .hide-mobile {
