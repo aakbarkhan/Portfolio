@@ -116,8 +116,8 @@ function cardGenerate(data) {
   list2.innerText = data[i].languages[2];
   list3.innerText = data[i].languages[3];
 
-  btn1.innerHTML = `${data[i].live}` + '<img id="live-btn" src="./live.png" alt="btn">';
-  btn2.innerHTML = `${data[i].source}` + '<i id="github" class="fab fa-github"></i>';
+  btn1.innerHTML = `${data[i].live}<img id="live-btn" src="./live.png" alt="btn">`;
+  btn2.innerHTML = `${data[i].source}<i id="github" class="fab fa-github"></i>`;
   const mainContent = document.querySelector('.main');
 
   return mainContent.appendChild(page);
@@ -125,7 +125,7 @@ function cardGenerate(data) {
 
 const btnn = document.querySelectorAll('.btn');
 
-const model = document.querySelector('.page');
+// const model = document.querySelector('.page');
 
 function popUp() {
   document.body.appendChild(cardGenerate(data));
