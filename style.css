@@ -174,6 +174,8 @@ body {
   .head,
   .frameworks {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -242,7 +244,7 @@ body {
   .modelPage {
     position: fixed;
     width: 363px;
-    height: auto;
+    height: 95%;
     top: 3.5vh;
     background-color: #454571;
     display: flex;
@@ -251,9 +253,9 @@ body {
   }
 
   .closebtn {
-    position: relative;
-    right: -322px;
-    top: -19px;
+    position: absolute;
+    right: 20px;
+    top: 1%;
     background: none;
     color: white;
     border: none;
@@ -262,9 +264,17 @@ body {
     cursor: pointer;
   }
 
+  #github {
+    font-size: 10px;
+    font-size: 20px;
+    margin-left: 9px;
+  }
+  }
+
   .project-image {
     margin: 0 auto;
     width: 90%;
+    margin-top: 8px;
   }
 
   .para1 {
@@ -278,6 +288,7 @@ body {
 
   .frameworks {
     height: 13%;
+    
   }
 
   .source,
@@ -290,9 +301,41 @@ body {
     color: whitesmoke;
   }
 
+  .live-source {
+    display: flex;
+    flex-direction: column;
+  }
+
   .source {
-    margin-bottom: 20px;
-    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-top: 7px;
+    font-size: 17px;
+  }
+
+  .live {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+  }
+
+  #live-btn {
+    font-size: 10px;
+    font-size: 20px;
+    margin-left: 9px;
+  }
+
+  .add-border {
+    border-left-width: 2px;
+    border-left-color: white;
+    border-left-style: solid;
+    padding-left: 26px;
+  }
+
+  .add-border:last-child {
+    border-right-width: 2px;
+    border-right-color: white;
+    border-right-style: solid;
+    padding-right: 10px;
   }
 
   .lang-pop {
@@ -463,7 +506,7 @@ h2 {
 .discription {
   color: white;
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: normal;
@@ -515,6 +558,98 @@ h2 {
   .card-image:hover {
     width: 97%;
     height: 88%;
+  }
+
+  .modelPage {
+    position: fixed;
+    width: 80%;
+    left: 10%;
+    display: flex;
+    top: 18px;
+    height: 95%;
+    flex-direction: column;
+    z-index: 100;
+    background: #191765;
+    border: 1px solid #fff;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  }
+
+  .blurred {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+  }
+
+  .port-title {
+    text-align: left;
+    margin-left: 20px;
+    font-family: 'Roboto';
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2px;
+    letter-spacing: 0;
+  }
+
+  .closebtn {
+    position: absolute;
+    right: 4%;
+    top: 3%;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 20px;
+    width: 0;
+    cursor: pointer;
+  }
+
+  .project-image {
+    margin: 0 auto;
+    width: 95%;
+    height: 31%;
+  }
+
+  .source,
+  .live {
+    margin: 0;
+    width: auto;
+    height: 48px;
+    background: #7d73fc;
+    text-align: center;
+    color: whitesmoke;
+    filter: contrast(200%);
+    cursor: pointer;
+  }
+
+  .live {
+    margin-right: 25px;
+  }
+
+  .source {
+    margin-left: 25px;
+  }
+
+  #github {
+    font-size: 24px;
+    margin-left: 12px;
+  }
+
+  .live-source {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;;
+  }
+
+  .para1 {
+    display: flex;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
+    margin-top: 17px;
+    font-size: 16px;
+    color: whitesmoke;
+    font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', "Roboto", 'Oxygen', Ubuntu, 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 }
 
@@ -601,6 +736,11 @@ h3 {
   .work-desk,
   .outside {
     display: none;
+  }
+
+  .blurred {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
   }
 
   .card {
