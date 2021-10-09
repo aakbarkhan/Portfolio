@@ -112,8 +112,11 @@ function cardGenerate(data) {
 
   para.innerText = data[i].text;
   para.className = 'para1';
+  
   list1.innerText = data[i].languages[0];
+
   list2.innerText = data[i].languages[2];
+
   list3.innerText = data[i].languages[3];
 
   btn1.innerHTML = `${data[i].live}<img id="live-btn" src="./live.png" alt="btn">`;
