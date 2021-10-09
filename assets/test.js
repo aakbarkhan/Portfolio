@@ -87,7 +87,7 @@ const data = [
     page.className = 'modelPage';
     let num = data.length;
     let i = Math.floor(Math.random() * num);
-  
+    // console.log(i);
     
            
         const title = document.createElement('h2');
@@ -127,8 +127,6 @@ const data = [
           btnnice.appendChild(btn1);
           btnnice.appendChild(btn2);
           page.appendChild(btnnice);
-
-         
           
           img.src = data[i].image;
           img.className = 'project-image';
@@ -140,7 +138,6 @@ const data = [
           list1.innerText = data[i].languages[0];
           list2.innerText = data[i].languages[2];
           list3.innerText = data[i].languages[3];
-       
           btn1.innerHTML =`${data[i].live}` + '<img id="live-btn" src="./live.png" alt="btn">';
           btn2.innerHTML = `${data[i].source}` +'<i id="github" class="fab fa-github"></i>';
           const mainContent = document.querySelector('.main');
@@ -150,9 +147,7 @@ const data = [
   }
   
   const btnn = document.querySelectorAll('.btn');
-
   const model = document.querySelector('.page');
-  
   function popUp() {    
     document.body.appendChild(cardGenerate(data));
     
@@ -169,7 +164,5 @@ const data = [
 
   btnsMobileArr.forEach((btn, idx) => {
     btn.setAttribute('id', idx);
-
     btnn[idx].addEventListener('click',popUp );
-  
   })

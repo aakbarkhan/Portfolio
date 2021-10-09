@@ -3,6 +3,7 @@ body {
   width: 375px;
   background-color: #1d2664;
   font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
 }
 
 .heading {
@@ -170,12 +171,20 @@ body {
     font-size: 34px;
     color: white;
   }
+
+  .head,
+  .frameworks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 992px) {
   .desktop,
   .skills-desktop,
-  .desktop-social-icon {
+  .desktop-social-icon,
+  .model {
     display: none;
   }
 
@@ -210,7 +219,7 @@ body {
 
   .menuMenu {
     position: fixed;
-    transform: translateX(-100%);
+    transform: translateX(-200%);
     transition: transform 0.5s;
     height: 900px;
     top: 0;
@@ -226,95 +235,202 @@ body {
     background-image: url(./assets/shapemobile2.png);
     background-repeat: no-repeat;
     background-size: 30px 10px;
-  }
-
-  .menuMenu .nav-tag a {
-    color: white;
-    text-decoration: none;
-  }
-
-  .closeIcon {
-    position: fixed;
-    margin-left: -21px;
-    z-index: 100;
-    margin-top: -17px;
-  }
-
-  .showMenu {
-    transform: translateX(0);
     margin: 0 auto;
   }
 
-  .menuMenu > li:nth-child(1) {
-    padding-top: 12%;
+  .showModel {
+    transform: translateX(0);
   }
 
-  span {
+  .modelPage {
+    position: fixed;
+    width: 363px;
+    height: 96%;
+    top: 2.5vh;
+    background-color: #454571;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ffff;
+  }
+
+  .closebtn {
+    position: absolute;
+    right: 20px;
+    top: 1%;
+    background: none;
+    color: white;
+    border: none;
     font-size: 18px;
-    color: #7e72fa;
-  }
-
-  span:hover {
+    width: 0;
     cursor: pointer;
   }
 
-  body {
-    margin: 0 auto;
+  #github {
+    font-size: 10px;
+    font-size: 20px;
+    margin-left: 9px;
   }
+}
 
-  .mobile-lang {
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
+.project-image {
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 8px;
+}
 
-  .stick-first {
-    float: left;
-    position: absolute;
-    width: 100px;
-    width: 200px;
-    margin-top: 181px;
-  }
+.para1 {
+  margin: 19px 19px;
+  text-align: justify;
+  height: 154px;
+  font-size: 16px;
+  color: whitesmoke;
+  font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', "Roboto", 'Oxygen', Ubuntu, 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
-  .stick-sec {
-    float: left;
-    position: absolute;
-    width: 100px;
-    margin-top: 230px;
-    margin-left: 228px;
-  }
+.frameworks {
+  height: 13%;
+}
 
-  .ell-21 {
-    display: none;
-  }
+.source,
+.live {
+  margin: 0 auto;
+  width: auto;
+  height: 48px;
+  background: #7d73fc;
+  text-align: center;
+  color: whitesmoke;
+}
 
-  .ell-22 {
-    float: left;
-    position: absolute;
-    width: 94px;
-    margin-top: 269px;
-    margin-left: 231px;
-  }
+.live-source {
+  display: flex;
+  flex-direction: column;
+}
 
-  .hide-mobile {
-    display: none;
-  }
+.source {
+  margin-bottom: 15px;
+  margin-top: 7px;
+  font-size: 17px;
+}
 
-  .language-framework {
-    color: #9490ff;
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
+.live {
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+}
 
-  .social-icons-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-  }
+#live-btn {
+  font-size: 10px;
+  font-size: 20px;
+  margin-left: 9px;
+}
 
-  .fab {
-    font-size: 34px;
-    color: white;
-  }
+.add-border {
+  border-left-width: 2px;
+  border-left-color: white;
+  border-left-style: solid;
+  padding-left: 26px;
+}
+
+.add-border:last-child {
+  border-right-width: 2px;
+  border-right-color: white;
+  border-right-style: solid;
+  padding-right: 10px;
+}
+
+.lang-pop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.port-title {
+  text-align: left;
+  margin-left: 20px;
+  height: 1px;
+  font-size: 16px;
+}
+
+.menuMenu .nav-tag a {
+  color: white;
+  text-decoration: none;
+}
+
+.closeIcon {
+  position: fixed;
+  margin-left: -21px;
+  z-index: 100;
+  margin-top: -17px;
+}
+
+.showMenu {
+  transform: translateX(0);
+}
+
+li > .menuMenu :nth-child(1) {
+  padding-top: 12%;
+}
+
+span {
+  font-size: 18px;
+  color: #7e72fa;
+}
+
+span:hover {
+  cursor: pointer;
+}
+
+.mobile-lang {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.stick-first {
+  float: left;
+  position: absolute;
+  width: 100px;
+  width: 200px;
+  margin-top: 181px;
+}
+
+.stick-sec {
+  float: left;
+  position: absolute;
+  width: 100px;
+  margin-top: 230px;
+  margin-left: 228px;
+}
+
+.ell-21 {
+  display: none;
+}
+
+.ell-22 {
+  float: left;
+  position: absolute;
+  width: 94px;
+  margin-top: 269px;
+  margin-left: 231px;
+}
+
+.hide-mobile {
+  display: none;
+}
+
+.language-framework {
+  color: #9490ff;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.social-icons-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.fab {
+  font-size: 34px;
+  color: white;
 }
 
 .logo {
@@ -385,16 +501,10 @@ h2 {
 .discription {
   color: white;
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: normal;
-}
-
-.language-framework {
-  color: #9490ff;
-  display: grid;
-  grid-template-columns: 50% 50%;
 }
 
 .side-ellipse {
@@ -437,6 +547,98 @@ h2 {
   .card-image:hover {
     width: 97%;
     height: 88%;
+  }
+
+  .modelPage {
+    position: fixed;
+    width: 80%;
+    left: 10%;
+    display: flex;
+    top: 18px;
+    height: 95%;
+    flex-direction: column;
+    z-index: 100;
+    background: #191765;
+    border: 1px solid #fff;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  }
+
+  .blurred {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+  }
+
+  .port-title {
+    text-align: left;
+    margin-left: 20px;
+    font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', "Roboto", 'Oxygen', Ubuntu, 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2px;
+    letter-spacing: 0;
+  }
+
+  .closebtn {
+    position: absolute;
+    right: 4%;
+    top: 3%;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 20px;
+    width: 0;
+    cursor: pointer;
+  }
+
+  .project-image {
+    margin: 0 auto;
+    width: 95%;
+    height: 31%;
+  }
+
+  .source,
+  .live {
+    margin: 0;
+    width: auto;
+    height: 48px;
+    background: #7d73fc;
+    text-align: center;
+    color: whitesmoke;
+    filter: contrast(200%);
+    cursor: pointer;
+  }
+
+  .live {
+    margin-right: 25px;
+  }
+
+  .source {
+    margin-left: 25px;
+  }
+
+  #github {
+    font-size: 24px;
+    margin-left: 12px;
+  }
+
+  .live-source {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .para1 {
+    display: flex;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
+    margin-top: 17px;
+    font-size: 16px;
+    color: whitesmoke;
+    font-family: -apple-system, 'BlinkMacSystemFont', 'Segoe UI', "Roboto", 'Oxygen', Ubuntu, 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 }
 
@@ -517,6 +719,17 @@ h3 {
     margin-bottom: -48px;
     text-align: left;
   }
+
+  .post-1 {
+    height: 204px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    color: #dcdce8;
+    text-align: center;
+    text-align: justify;
+    margin-right: 20px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -525,10 +738,26 @@ h3 {
     display: none;
   }
 
+  .blurred {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+  }
+
   .card {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(4, auto);
+  }
+
+  .post-1 {
+    height: 204px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    color: #dcdce8;
+    text-align: center;
+    text-align: justify;
+    margin-right: 20px;
   }
 }
 
@@ -539,17 +768,6 @@ h3 {
   font-size: 32px;
   line-height: 44px;
   margin-top: 40px;
-}
-
-.post-1 {
-  height: 204px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  line-height: 28px;
-  color: #dcdce8;
-  text-align: center;
-  text-align: justify;
-  margin-right: 20px;
 }
 
 .languages {
@@ -733,6 +951,10 @@ textarea {
 @media screen and (min-width: 992px) {
   input {
     width: 553px;
+  }
+
+  .hide-mobile {
+    display: block;
   }
 
   .endline {
