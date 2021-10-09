@@ -64,8 +64,6 @@ const data = [
 function cardGenerate(data) {
   const page = document.createElement('div');
   page.className = 'modelPage';
-  // const num = data.length;
-  // const i = Math.floor(Math.random() * num);
 
   const title = document.createElement('h2');
   title.className = 'port-title';
@@ -113,7 +111,6 @@ function cardGenerate(data) {
   para.innerText = data[0].text;
   para.className = 'para1';
   const arr = data[0].languages;
-  console.log(arr);
   const [lang1, lang2, lang3] = arr;
   list1.innerText = lang1;
   list2.innerText = lang3;
@@ -135,8 +132,6 @@ function cardGenerate(data) {
 }
 
 const btnn = document.querySelectorAll('.btn');
-
-// const model = document.querySelector('.page');
 
 function popUp() {
   document.body.appendChild(cardGenerate(data));
