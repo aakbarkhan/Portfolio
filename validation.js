@@ -1,6 +1,5 @@
 const form = document.querySelector('#contact-form');
 const warningtxt = document.querySelector('#warningtxt');
- 
 
 form.addEventListener('submit', (event) => {
   const emailstring = document.getElementById('email').value;
@@ -11,9 +10,8 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-
 const formm = document.querySelector('#contact-formm');
-
+const warningtxtt = document.querySelector('#warningtxtt');
 
 formm.addEventListener('submit', (event) => {
   const emailstring = document.getElementById('emaill').value;
