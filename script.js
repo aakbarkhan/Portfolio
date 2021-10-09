@@ -64,8 +64,8 @@ const data = [
 function cardGenerate(data) {
   const page = document.createElement('div');
   page.className = 'modelPage';
-  const num = data.length;
-  const i = Math.floor(Math.random() * num);
+  // const num = data.length;
+  // const i = Math.floor(Math.random() * num);
 
   const title = document.createElement('h2');
   title.className = 'port-title';
@@ -105,19 +105,22 @@ function cardGenerate(data) {
   btnnice.appendChild(btn2);
   page.appendChild(btnnice);
 
-  img.src = data[i].image;
+  img.src = data[0].image;
   img.className = 'project-image';
-  title.innerText = data[i].title;
+  title.innerText = data[0].title;
   span.innerText = 'x';
 
-  para.innerText = data[i].text;
+  para.innerText = data[0].text;
   para.className = 'para1';
-  list1.innerText = data[i].languages[0];
-  list2.innerText = data[i].languages[2];
-  list3.innerText = data[i].languages[3];
+  const arr = data[0].languages;
+  console.log(arr);
+  const [lang1, lang2, lang3] = arr;
+  list1.innerText = lang1;
+  list2.innerText = lang3;
+  list3.innerText = lang2;
 
-  btn1.innerHTML = `${data[i].live}<img id="live-btn" src="./live.png" alt="btn">`;
-  btn2.innerHTML = `${data[i].source}<i id="github" class="fab fa-github"></i>`;
+  btn1.innerHTML = `${data[0].live} <img id="live-btn" src="./live.png" alt="btn">`;
+  btn2.innerHTML = `${data[0].source} <i id="github" class="fab fa-github"></i>`;
   const mainContent = document.querySelector('.main');
 
   return mainContent.appendChild(page);
