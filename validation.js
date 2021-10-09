@@ -10,3 +10,16 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
   }
 });
+
+
+const formm = document.querySelector('#contact-formm');
+
+
+formm.addEventListener('submit', (event) => {
+  const emailstring = document.getElementById('emaill').value;
+
+  if (emailstring !== emailstring.toLowerCase()) {
+    warningtxtt.innerHTML = 'Please fill out the email with lower case only, thank you.';
+    event.preventDefault();
+  }
+});
