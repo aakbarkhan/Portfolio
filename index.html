@@ -319,7 +319,6 @@
                 </p>
                 <div class="form-info" id="contact-form">
                     <form action="https://formspree.io/f/mdoybpze" method="POST">
-                        <span id="warningtxt"></span> 
                         <ul class="input-form">
                             <li>
                                 <input name="name" required type="text" placeholder="Type your name" maxlength="30" />
@@ -329,7 +328,11 @@
                             </li>
                             <li>
                                 <textarea name="text" maxlength="500" id="in" cols="68" rows="10" required
-                                    placeholder="Enter text here"></textarea>
+                                placeholder="Enter text here"></textarea>
+                            </li>
+                            <li>
+                                <span id="warningtxt"></span> 
+
                             </li>
                             <li>
                                 <button class="btn-btn" type="submit">Submit</button>
@@ -379,7 +382,6 @@
                 </p>
                 <div class="form-info" id="contact-formm">
                     <form action="https://formspree.io/f/mdoybpze" method="POST">
-                        <span id="warningtxtt"></span>
                         <ul class="input-form">
                             <li>
                                 <label for="name">
@@ -388,15 +390,15 @@
                             </li>
                             <li>
                                 <label for="emaill">
-                                    <input id='emaill' type="email" placeholder="Type your email" required name="email" id="email" aria-label="name"/>
+                                    <input  type="email" placeholder="Type your email" required name="email" id="emaill" aria-label="name"/>
                                 </label>
                             </li>
                             <li>
                                 <textarea name="text" maxlength="500" id="input" cols="67" rows="10" required
-                                placeholder="Enter text here">
-                                </textarea>
-                            </li>
-                            <li>
+                                placeholder="Enter text here"></textarea>
+                        </li>
+                        <li id="warningtxtt"></li>
+                        <li>
                                 <button class="btn-btn" type="submit">Submit</button>
                             </li>
                         </ul>
